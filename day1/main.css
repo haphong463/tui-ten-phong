@@ -26,7 +26,7 @@ header{
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  padding: 28px 12%;
+  padding: 20px 12%;
   transition: all .50s ease;
   background-color: #000;
 }
@@ -44,6 +44,30 @@ header{
   padding: 5px 0;
   margin: 0px 30px;
   transition: all .50s ease;
+}
+
+header .main div{
+  color:#fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+header .main div:hover, #menu-icon:hover{
+  color:chocolate;
+}
+.btn{
+	background-color:rgb(24, 187, 97);
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
+}
+.btn:hover{
+	transform: scale(1.2);
 }
 
 /* start effect hover header */
@@ -92,6 +116,14 @@ header{
   display:flex;
   align-items: center;
 }
+
+.main a{
+  margin-right:25px;
+  margin-left:10px;
+  color: var(--text-color);
+  
+}
+
 #menu-icon{
   font-size:35px;
   color: var(--text-color);
@@ -99,6 +131,9 @@ header{
   z-index:10001;
   display:none;
 }
+
+
+
 
 /* for mobile */
 
@@ -140,6 +175,10 @@ header{
 }
 
 /* end for mobile */
+
+
+
+
 /* start content */
 .content{
   margin-top:150px;
@@ -162,7 +201,8 @@ span{
 
 
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1280px;
+  max-height:1024px;
   position: relative;
   margin: auto;
 }
@@ -188,7 +228,11 @@ span{
 /* thiết kế nút mũi tên next nằm phía bên phải */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 50%;
+}
+.prev {
+  left: 0;
+  border-radius: 50%;
 }
 /* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
 .prev:hover, .next:hover {
@@ -242,3 +286,21 @@ span{
   to {opacity: 1}
 }
 /* kết thúc slideshow */
+table{
+  margin-left:auto;
+  margin-right:Auto;  
+}
+
+.column {
+  float:left;
+  padding: 15px;
+  width: 25%;
+   /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+
+
+h2{
+  color:chocolate;
+}
